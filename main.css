@@ -56,6 +56,8 @@
 } .content {
     z-index: 50;
     padding-top: 60px; 
+} .toggle {
+    display: none;
 }
 
 .link {
@@ -66,10 +68,6 @@
     transition: all 0.4s ease-in-out;
 } .link:hover {
     background-color: rgba(255, 255, 255, 0.3);
-}
-
-.toggle {
-    display: none;
 }
 
 @media only screen and (max-width:700px) {
@@ -93,27 +91,14 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* COLORS */
 .red,.red a {
     color: #FFF;
     background-color: #F55;
-}
+} .blue,.blue a {
+    color: #FFF;
+    background-color: #55F;
+} .amber,.amber a {
+    color: #FFF;
+    background-color: #FA0;
+} 
