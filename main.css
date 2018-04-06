@@ -72,8 +72,8 @@ body { font-family: 'Roboto', sans-serif; }
 } .btn {
     margin: 5px;
     width: 160px;
-    font-size: 18px;
     padding: 10px;
+    font-size: 18px;
     border-radius: 4px;
     text-align: center;
     transition: all 0.4s ease-in-out;
@@ -93,21 +93,12 @@ body { font-family: 'Roboto', sans-serif; }
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (max-width:700px) {
-    .fluid {
-        flex-direction: column;
-        justify-content: center;
-    } .fluid-r {
-        justify-content: center;
-        flex-direction: column-reverse;
-    } .fluid.left,.fluid-r.left {
-        align-items: flex-start;
-    } .fluid.center,.fluid-r.center {
-        align-items: center;
-    } .fluid.right,.fluid-r.right {
-        align-items: flex-end;
+@media only screen and (min-width:1440px) {
+    .content {
+        padding: 0 20%;
+        padding-top: 60px;
     }
-
+} @media only screen and (max-width:1000px) {
     .toggle {
         display: flex;
     } .itens {
@@ -128,6 +119,20 @@ body { font-family: 'Roboto', sans-serif; }
         display: flex;
     } .toggle:focus {
         opacity: 0.5;
+    }
+} @media only screen and (max-width:650px) {
+    .fluid {
+        flex-direction: column;
+        justify-content: center;
+    } .fluid-r {
+        justify-content: center;
+        flex-direction: column-reverse;
+    } .fluid.left,.fluid-r.left {
+        align-items: flex-start;
+    } .fluid.center,.fluid-r.center {
+        align-items: center;
+    } .fluid.right,.fluid-r.right {
+        align-items: flex-end;
     }
 }
 
